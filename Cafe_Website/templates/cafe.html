@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="static/styles.css" rel="stylesheet">
+    <title>Find Friendly Work Places</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="staticHead">
+      <h1>
+          RESTABILIZE
+      </h1>
+    </div>
+    <div class="cafe">
+        <div class="name"><h2>{{name}}</h2></div>
+        <img src="{{img}}">
+    </div>
+
+
+<table>
+    <tr> <th rowspan="4">PRODUCTIVITY</th></tr>
+    <tr> <td><h5>has_wifi: {{has_wifi}}</h5></td></tr>
+    <tr> <td><h5>has_socket: {{has_sockets}}</h5></td></tr>
+    <tr> <td><h5>can_take_calls: {{can_take_calls}}</h5></td></tr>
+    <tr> <th rowspan="2">COMMUNITY</th></tr>
+    <tr> <td><h5>seats: {{seats}}</h5></td></tr>
+    <tr> <th rowspan="2">SERVICE</th></tr>
+    <tr> <td><h5>coffee: {{coffee_price}}</h5></td></tr>
+    <tr> <th rowspan="2">SPACE</th></tr>
+    <tr> <td><h5>has_toilet: {{has_toilet}}</h5></td></tr>
+</table>
+
+</body>
+
+<section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register for free</span>
+            <a class="btn btn-warning btn-lg" href="{{ url_for('delete', id=id) }}" role="button">Delete</a>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+
+</html>

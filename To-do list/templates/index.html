@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> TO-DO LIST</title>
+</head>
+<body>
+<div>
+    <h2>TO-DO LIST</h2>
+
+  <form action="/store_list" method="post">
+    <input name="item" placeholder="Write your next task here...">
+    <input type="hidden" value="Submit" />
+  </form>
+
+</div>
+
+    {% if all_list |length != 0 %}
+    {% for each_list in all_list %}
+    <h3>{{each_list.item}} <a href="{{ url_for('delete', id=each_list.id) }}" role="button">Delete</a></h3>
+    {% endfor %}
+    {% endif %}
+
+</body>
+</html>
