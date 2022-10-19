@@ -1,10 +1,11 @@
 from tkinter import *
 
 
+# Creating the class for the app.
 class App(Tk):
     def __init__(self):
         super().__init__()
-
+        # Initializing the properties.
         self.state("zoomed")
         self.title("DANGEROUS WRITER")
         self.config(bg="grey")
@@ -16,6 +17,7 @@ class App(Tk):
         self.on_click_id = self.text_box.bind('<Button-1>', self.on_click)
         self.click_id = None
 
+    # Creating the click functionality.
     def on_click(self, event):
         self.text_box.configure(state=NORMAL)
         self.text_box.delete("1.0", END)
@@ -33,6 +35,7 @@ class App(Tk):
 
         self.click_id = self.text_box.after(1000, self.time_elapsed)
 
+    # Deleting the progress thus far.
     def time_elapsed(self):
         self.text_box.delete("1.0", END)
         self.text_box.config(bg="red")
