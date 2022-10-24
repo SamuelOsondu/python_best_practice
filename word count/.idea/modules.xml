@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jewlize.iml" filepath="$PROJECT_DIR$/.idea/jewlize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/word count.iml" filepath="$PROJECT_DIR$/.idea/word count.iml" />
     </modules>
   </component>
 </project>
